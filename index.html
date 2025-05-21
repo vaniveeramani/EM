@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employee Maintenance Portal</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Maintenance Portal</h1>
+    <form id="employeeForm">
+      <label for="empId">Employee ID:</label>
+      <input type="number" id="empId" required />
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="designation">Designation:</label>
+      <input type="text" id="designation" required />
+
+      <label>Gender:</label>
+      <div class="gender-group">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+        <label><input type="radio" name="gender" value="Other" /> Other</label>
+      </div>
+
+      <label for="salary">Salary:</label>
+      <input type="number" id="salary" required />
+
+      <div class="buttons">
+        <button type="submit" id="addBtn">Add</button>
+        <button type="button" id="modifyBtn">Modify</button>
+        <button type="button" id="deleteBtn">Delete</button>
+      </div>
+    </form>
+
+    <table id="employeeTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Designation</th>
+          <th>Gender</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</body>
+</html>
